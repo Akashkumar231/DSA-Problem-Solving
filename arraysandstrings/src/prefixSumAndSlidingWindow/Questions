@@ -1,0 +1,6 @@
+Prefix Sum & Sliding Window
+6️⃣ Find the sum of all subarrays of size k using the sliding window technique.
+7️⃣ Find the maximum sum of a contiguous subarray of size k.
+8️⃣ Check if an array has a subarray with sum equal to k (Subarray Sum Equals K - Leetcode 560).
+9️⃣ Find the equilibrium index of an array (where the sum of the left part equals the right part).
+🔟 Calculate the prefix sum of an array efficiently.
