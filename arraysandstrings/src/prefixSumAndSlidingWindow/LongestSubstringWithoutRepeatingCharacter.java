@@ -30,15 +30,12 @@ public class LongestSubstringWithoutRepeatingCharacter {
 
                 }
 
-
-            }
-
+             }
 
 
         }
 
         return maxLength;
-
 
     }
 
@@ -55,19 +52,12 @@ public class LongestSubstringWithoutRepeatingCharacter {
 
             if (map.containsKey(array.charAt(right)))
                 left = Integer.max(map.get(array.charAt(right))+1 , left);
-
             map.put(array.charAt(right),right);
-
             maxLength= Math.max(maxLength,right-left+1);
             right++;
-
-
-
-
         }
 
         return maxLength;
-
 
     }
 
