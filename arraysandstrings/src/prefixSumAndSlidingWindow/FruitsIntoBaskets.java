@@ -7,6 +7,7 @@ import java.util.Set;
 
 public class FruitsIntoBaskets {
 
+    // Brute Force Approach
 
     public static int getMaxLength1(int [] array ){
         int maxLength = 0;
