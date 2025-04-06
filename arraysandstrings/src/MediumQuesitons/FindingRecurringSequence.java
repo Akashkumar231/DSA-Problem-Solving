@@ -2,25 +2,14 @@ package MediumQuesitons;
 
 import java.util.HashMap;
 
-/*
-Given two integers a and b(b != 0), the task is to return the fraction a/b in string format. If the fractional part is repeating, enclose the repeating part in parentheses.
+public class FindingRecurringSequence {
 
-Examples:
 
-Input: a = 1, b = 2
-Output: “0.5”
-Explanation: 1/2 = 0.5 with no repeating part.
 
-Input: a = 50, b = 22
-Output: “2.(27)”
-Explanation: 50/22 = 2.27272727… Since fractional part (27) is repeating, it is enclosed in parentheses.
- */
-public class Fraction_t_Recurring_Decimal {
-
-    public static String getRecurringDecimal(int a, int b){
+    public static String findingRecurringSequence(int a, int b){
 
         if (a==0){
-            return "0";
+            return "No recurring sequence";
         }
         String result = a<0 && b<0 ? "-" : "";
 
@@ -39,8 +28,8 @@ public class Fraction_t_Recurring_Decimal {
             // if the key already exist then perform action and return.
             if (hashMap.containsKey(rem)){
 
-                result = result.substring(0,hashMap.get(rem))+"("+ result.substring(hashMap.get(rem))+")";
-                break;
+                return "Recurring sequence is "+ result.substring(hashMap.get(rem));
+
             }
 
             hashMap.put(rem,result.length());
@@ -55,15 +44,16 @@ public class Fraction_t_Recurring_Decimal {
         }
 
 
-return  result;
+        return  "No recurring sequence";
     }
 
     public static void main(String [] args){
 
-        System.out.println(getRecurringDecimal(50,22));
+        System.out.println(findingRecurringSequence(11,2));
 
 
 
     }
+
 
 }
