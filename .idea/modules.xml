@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA-Problem-Solving.iml" filepath="$PROJECT_DIR$/.idea/DSA-Problem-Solving.iml" />
       <module fileurl="file://$PROJECT_DIR$/arraysandstrings/arraysandstrings.iml" filepath="$PROJECT_DIR$/arraysandstrings/arraysandstrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/timeComplexity_spaceComplexity/timeComplexity_spaceComplexity.iml" filepath="$PROJECT_DIR$/timeComplexity_spaceComplexity/timeComplexity_spaceComplexity.iml" />
     </modules>
   </component>
 </project>
