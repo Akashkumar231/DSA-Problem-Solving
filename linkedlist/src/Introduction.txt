@@ -13,3 +13,5 @@ Data Structure: Contiguous
 Memory Allocation: Typically allocated to the whole array
 Insertion/Deletion: Inefficient
 Access: Random
+
+Creationg of the linkedList.
