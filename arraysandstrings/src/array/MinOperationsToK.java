@@ -13,6 +13,7 @@ public class MinOperationsToK {
         boolean smallerExist = false;
         int greaterK = 0;
         int lastGreater = -1;
+
         for(int num : nums){
 
             if(num == k){
