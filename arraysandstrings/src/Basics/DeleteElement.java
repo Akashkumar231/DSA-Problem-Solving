@@ -8,15 +8,8 @@ public class DeleteElement {
     public static void deleteElement(int [] array , int index){
 
         for (int i = index; i< array.length-1; i++ ){
-
             array[i] = array[i+1];
-
         }
-
-
-
-
-
     }
 
     public static void main(String [] args){
