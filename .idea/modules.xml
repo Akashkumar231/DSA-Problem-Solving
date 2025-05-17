@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/DSA-Problem-Solving.iml" filepath="$PROJECT_DIR$/.idea/DSA-Problem-Solving.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dutch_National_Flag_Algorithm/Dutch_National_Flag_Algorithm.iml" filepath="$PROJECT_DIR$/Dutch_National_Flag_Algorithm/Dutch_National_Flag_Algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/arraysandstrings/arraysandstrings.iml" filepath="$PROJECT_DIR$/arraysandstrings/arraysandstrings.iml" />
       <module fileurl="file://$PROJECT_DIR$/backtracking/backtracking.iml" filepath="$PROJECT_DIR$/backtracking/backtracking.iml" />
       <module fileurl="file://$PROJECT_DIR$/bitwisealgorithms/bitwisealgorithms.iml" filepath="$PROJECT_DIR$/bitwisealgorithms/bitwisealgorithms.iml" />
