@@ -48,22 +48,6 @@ public class AssignCookies {
 
          }
 
-//        for (int i = 0;i< s.length ;i++){
-//
-//            for (int j = 0 ; j<g.length ; j++){
-//
-//                if (s[i]>=g[j] && isSatified[j]==false){
-//                    isSatified[j]=true;
-//                    count++;
-//                }
-//
-//
-//            }
-//
-//        }
-
-
-
        return count;
 
     }
