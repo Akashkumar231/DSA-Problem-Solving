@@ -3,7 +3,8 @@ import java.util.Arrays;
 
 public class MergeSortAlgorithm {
 
-    public static void mergeSort(int [] array , int low , int high){
+    public static void mergeSort(int [] array , int low , int high)
+    {
 
         if (low>=high){
             return;
