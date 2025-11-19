@@ -1,7 +1,6 @@
 package innerclasses;
 
 public class CrissCross {
-
     public static void CrissCrossPattern(int n){
 
         for (int row = 1 ; row<= n ; row++){
@@ -25,10 +24,27 @@ public class CrissCross {
         }
 
     }
+    public static void printFibbonacciInTriange(int n){
 
+        int a = 0 ; int b = 1 ;int  c = 1;
+
+        for (int row = 0 ; row< n ;row++){
+
+            for (int col = 0; col<=row; col++){
+                System.out.print( a + " " );
+                a =b ;
+                b = c ;
+                c=a+b;
+
+
+            }
+            System.out.println();
+
+        }
+
+    }
     public static void main(String [] args){
         CrissCrossPattern(5);
+        printFibbonacciInTriange(5);
     }
-
-
 }
