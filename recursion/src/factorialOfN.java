@@ -1,13 +1,16 @@
 public class factorialOfN {
 
-    public static int getFact(int n){
+    public static long getFact(int n){
 
         if(n == 1){
             return 1;
         }
 
-        int fact = n* getFact(n-1);
-        return fact;
+        long smallAns = getFact(n-1);
+
+        long bigAns = smallAns * n;
+
+        return bigAns;
     }
 
     public static void main(String [] args){
