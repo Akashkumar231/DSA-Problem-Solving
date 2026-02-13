@@ -4,7 +4,7 @@ import java.util.List;
 
 public class LetterCombinations {
     private static List<String> ways;
-    private static String [] map = {"","","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
+    private static String [] map = {"","abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"};
     public static void printPath(String input , int index , String output){
 
         if (index == input.length()){
