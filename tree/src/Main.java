@@ -26,7 +26,8 @@ public class Main {
         bst.inOrderTraversal();
         System.out.println();
         bst.postOrderTraversal();
-
+        System.out.println();
+        bst.preOrderTraversal();
 
     }
 }
