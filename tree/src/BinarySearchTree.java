@@ -75,22 +75,6 @@ public class BinarySearchTree {
     }
 
     private  Node insert(Node node , int value){
-//        System.out.print("Do you want to Insert Element : " );
-//        boolean isInsert = scanner.nextBoolean();
-//        if (isInsert){
-//            System.out.print("Enter the value : " );
-//            int value = scanner.nextInt();
-//            if (value<= node.value){
-//                // Enter the left of the root node
-//
-//                node.left  = new Node(value);
-//                insert(node.left,scanner);
-//            }else{
-//                // Enter the right of the root node;
-//                node.right = new Node(value);
-//                insert(node.right,scanner);
-//            }
-//        }
         if(node == null){
             Node leaf = new Node(value);
             return leaf;
@@ -102,14 +86,64 @@ public class BinarySearchTree {
             node.right = insert(node.right, value);
         }
         node.height = Math.max(height(node.left),height(node.right))+1;
+        return rotate(node);
+    }
+
+    private Node leftRotate(Node node){
+
+        Node parent = node.right;
+        Node parentLeft = node.right.left;
+        parent.left = node;
+        node.right=parentLeft;
         return node;
+
+    }
+
+    private Node rightRotate(Node node){
+
+        Node parent = node.left;
+        Node parentRight = parent.right;
+        parent.left=node;
+        node.left=parentRight;
+        return node;
+
+    }
+
+    private Node rotate(Node node){
+        // left heavy
+        if (height(node.left)-height(node.right) > 1){
+            // left left case
+            if (height(node.left.left) - height(node.left.right)>0){
+                return rightRotate(node);
+            }
+
+            if (height(node.left.left)-height(node.left.right)<0){
+                node.left = leftRotate(node.left);
+                return rightRotate(node);
+            }
+
+        }
+
+        // right Heavy
+        if(height(node.left)-height(node.right)<1){
+            // right right case
+            if(height(node.right.left)-height(node.right.right) < 0){
+                return leftRotate(node);
+            }
+
+            if(height(node.right.left)-height(node.right.right) > 0){
+                node.right = rightRotate(node.right);
+                return leftRotate(node);
+            }
+        }
+        return node;
+
     }
 
     public boolean isPresent(int value){
         if (root == null){
             return false;
         }
-
         return isPresent(root , value);
     }
 
@@ -135,28 +169,22 @@ public class BinarySearchTree {
         if (root == null){
             return false;
         }
-
         if (root.value == value){
             return true;
         }
-
         return isPresent( root, value);
     }
 
     private boolean isPresentLogN(Node node , int value){
-
         if(node == null){
             return false;
         }
-
         if(node.value == value){
             return true;
         }
-
         if(value < node.value){
             return isPresentLogN(node.left,value);
         }
-
         return  isPresentLogN(node.right,value);
     }
 
@@ -165,7 +193,6 @@ public class BinarySearchTree {
     }
 
     private void preOrderTraversal(Node node) {
-
         if (node == null){
             return;
         }
@@ -182,7 +209,6 @@ public class BinarySearchTree {
         if (node == null){
             return;
         }
-
         preOrderTraversal(node.left);
         preOrderTraversal(node.right);
         System.out.print(node.value + " ");
@@ -196,7 +222,6 @@ public class BinarySearchTree {
         if (node == null){
             return;
         }
-
         preOrderTraversal(node.left);
         System.out.print(node.value + " ");
         preOrderTraversal(node.right);
