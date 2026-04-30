@@ -95,6 +95,11 @@ public class BinarySearchTree {
         Node parentLeft = node.right.left;
         parent.left = node;
         node.right=parentLeft;
+
+        node.height = Math.max(height(node.left),height(node.right) + 1) ;
+        parent.height = Math.max(height(parent.left),height(parent.right)+1);
+
+
         return node;
 
     }
@@ -105,6 +110,10 @@ public class BinarySearchTree {
         Node parentRight = parent.right;
         parent.left=node;
         node.left=parentRight;
+
+        node.height = Math.max(height(node.left),height(node.right) + 1) ;
+        parent.height = Math.max(height(parent.left),height(parent.right)+1);
+
         return node;
 
     }
