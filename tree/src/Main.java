@@ -9,7 +9,7 @@ public class Main {
         binaryTree.display();
         System.out.println("Hello, World!");
         */
-
+/*
         BinarySearchTree bst = new BinarySearchTree();
         bst.insert(45);
         bst.insert(51);
@@ -28,6 +28,13 @@ public class Main {
         bst.postOrderTraversal();
         System.out.println();
         bst.preOrderTraversal();
+*/
+
+        int [] array =new int[] {3,8,7,6,-2,-8,-8,4,9};
+
+        SegmentTree segmentTree = new SegmentTree();
+        segmentTree.constructTree(array);
+        segmentTree.displayTree();
 
     }
 }
