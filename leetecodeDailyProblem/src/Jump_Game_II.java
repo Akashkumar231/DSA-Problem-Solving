@@ -31,28 +31,17 @@ public class Jump_Game_II {
     */
 
     public static  int jump(int[] nums) {
-
-       int min = Integer.MAX_VALUE;
-
-
-       for (int index = 0 ; index < nums.length ; index++){
-           int hops = 0;
-           for (int range = 0  ; range <=  nums[index] ; range++){
-
-                  if (nums [index] + range > nums.length ){
-                      break;
-                  }
-
-                  hops++;
-                  if (nums[index] + range == nums[nums.length-1]){
-                      min = Math.min(min,hops);
-                  }
-           }
-
-       }
-
-       return min;
-
+        int jumps = 0;
+        int farthest = 0;
+        int currentEnd = 0;
+        for (int index = 0 ; index < nums.length -1 ; index++){
+            farthest = Math.max(farthest,index+nums[index]);
+            if (index == currentEnd){
+                jumps++;
+                currentEnd = farthest;
+            }
+        }
+       return jumps;
     }
 
     public static void main(String [] args){
