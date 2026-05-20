@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/bitwisealgorithms/bitwisealgorithms.iml" filepath="$PROJECT_DIR$/bitwisealgorithms/bitwisealgorithms.iml" />
       <module fileurl="file://$PROJECT_DIR$/dequeue/dequeue.iml" filepath="$PROJECT_DIR$/dequeue/dequeue.iml" />
       <module fileurl="file://$PROJECT_DIR$/dynamicprogramming/dynamicprogramming.iml" filepath="$PROJECT_DIR$/dynamicprogramming/dynamicprogramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fast_slow_pointer/fast_slow_pointer.iml" filepath="$PROJECT_DIR$/fast_slow_pointer/fast_slow_pointer.iml" />
       <module fileurl="file://$PROJECT_DIR$/graph/graph.iml" filepath="$PROJECT_DIR$/graph/graph.iml" />
       <module fileurl="file://$PROJECT_DIR$/greedyalgorithm/greedyalgorithm.iml" filepath="$PROJECT_DIR$/greedyalgorithm/greedyalgorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/heap/heap.iml" filepath="$PROJECT_DIR$/heap/heap.iml" />
