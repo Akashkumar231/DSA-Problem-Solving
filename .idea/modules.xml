@@ -25,6 +25,7 @@
       <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
       <module fileurl="file://$PROJECT_DIR$/timeComplexity_spaceComplexity/timeComplexity_spaceComplexity.iml" filepath="$PROJECT_DIR$/timeComplexity_spaceComplexity/timeComplexity_spaceComplexity.iml" />
       <module fileurl="file://$PROJECT_DIR$/tree/tree.iml" filepath="$PROJECT_DIR$/tree/tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trie/trie.iml" filepath="$PROJECT_DIR$/trie/trie.iml" />
     </modules>
   </component>
 </project>
