@@ -13,6 +13,9 @@ public class Main {
             trie.insertWord(s);
         }
 
+
+
+
        trie.displayWords();
         System.out.println(trie.isPrefix("ghi")); ;
     }
