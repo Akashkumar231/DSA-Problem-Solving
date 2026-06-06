@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class Leetecode_3753 {
     private String s;
     private Map<String, long[]> mp = new HashMap<>();
